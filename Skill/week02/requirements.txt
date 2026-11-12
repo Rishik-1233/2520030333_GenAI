@@ -1,0 +1,4 @@
+groq
+ollama
+python-dotenv
+pytest
