@@ -1,0 +1,17 @@
+﻿Check,Value,Result
+single-head output vs F.scaled_dot_product_attention,5.960e-08,PASS
+scaling d_k=4,std_raw=2.054,INFO
+scaling d_k=16,std_raw=3.963,INFO
+scaling d_k=64,std_raw=7.906,INFO
+scaling d_k=256,std_raw=16.416,INFO
+scaling d_k=1024,std_raw=32.003,INFO
+causal output vs F.sdpa(is_causal=True),1.192e-07,PASS
+future leakage,0.000e+00,PASS
+padding leakage,0.000e+00,PASS
+multi-head output vs nn.MultiheadAttention,8.941e-08,PASS
+attention weights (averaged over heads),2.980e-08,PASS
+causal multi-head vs nn.MultiheadAttention,1.192e-07,PASS
+output shape equals input shape,"(2, 6, 64)",PASS
+all params have non-zero grad,0.029101,PASS
+no NaN gradients,0,PASS
+L^2 memory at 32768,4096.0 MB,INFO
