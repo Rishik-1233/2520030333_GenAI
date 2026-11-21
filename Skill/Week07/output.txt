@@ -1,0 +1,181 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading openai-community/gpt2 into memory... (Please wait a few seconds)
+
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 148/148 [00:00<00:00, 5252.64it/s]
+Model ready! Results will be saved to 'gpt2_next_token_results.csv'.
+
+Enter prompt (or type 'exit' to quit): Enter top-k candidates to display [default = 6]: Enter temperature (e.g., 0.2, 1.0, 2.0) [default = 1.0]: 
+==================================================================================
+PROMPT: "The capital of France is" | TOP-K: 8 | TEMPERATURE: 1.0
+==================================================================================
+
+[STAGE 1] INPUT TOKENIZATION (Text -> Subword IDs)
+----------------------------------------------------------------------------------
+  Pos 0  | ID: 464    | Token: 'The'
+  Pos 1  | ID: 3139   | Token: ' capital'
+  Pos 2  | ID: 286    | Token: ' of'
+  Pos 3  | ID: 4881   | Token: ' France'
+  Pos 4  | ID: 318    | Token: ' is'
+
+[STAGE 2] RAW MODEL SCORES (Logits across all 50,257 vocabulary tokens)
+----------------------------------------------------------------------------------
+  Min Logit : -129.8683   |   Max Logit : -100.2498
+
+[STAGE 3] TOP-8 NEXT-TOKEN CANDIDATES (After Temperature & Softmax)
+----------------------------------------------------------------------------------
+Rank  | ID      | Candidate        | Raw Logit  | Scaled    | Prob (%)  | Visual Bar
+----------------------------------------------------------------------------------
+#1    | 262     | ' the'           | -100.2498 | -100.2498 |    8.46% | ██
+#2    | 783     | ' now'           | -100.8175 | -100.8175 |    4.79% | █
+#3    | 257     | ' a'             | -100.8555 | -100.8555 |    4.62% | █
+#4    | 4881    | ' France'        | -101.2102 | -101.2102 |    3.24% | 
+#5    | 6342    | ' Paris'         | -101.2143 | -101.2143 |    3.22% | 
+#6    | 287     | ' in'            | -101.4052 | -101.4052 |    2.66% | 
+#7    | 635     | ' also'          | -101.4141 | -101.4141 |    2.64% | 
+#8    | 407     | ' not'           | -101.5168 | -101.5168 |    2.38% | 
+----------------------------------------------------------------------------------
+Cumulative Probability of Top-8: 32.02% | Remaining 50,249 tokens: 67.98%
+Saved 8 rows to 'gpt2_next_token_results.csv'
+==================================================================================
+
+Enter prompt (or type 'exit' to quit): Enter top-k candidates to display [default = 6]: Enter temperature (e.g., 0.2, 1.0, 2.0) [default = 1.0]: 
+==================================================================================
+PROMPT: "The capital of France is" | TOP-K: 8 | TEMPERATURE: 0.2
+==================================================================================
+
+[STAGE 1] INPUT TOKENIZATION (Text -> Subword IDs)
+----------------------------------------------------------------------------------
+  Pos 0  | ID: 464    | Token: 'The'
+  Pos 1  | ID: 3139   | Token: ' capital'
+  Pos 2  | ID: 286    | Token: ' of'
+  Pos 3  | ID: 4881   | Token: ' France'
+  Pos 4  | ID: 318    | Token: ' is'
+
+[STAGE 2] RAW MODEL SCORES (Logits across all 50,257 vocabulary tokens)
+----------------------------------------------------------------------------------
+  Min Logit : -129.8683   |   Max Logit : -100.2498
+
+[STAGE 3] TOP-8 NEXT-TOKEN CANDIDATES (After Temperature & Softmax)
+----------------------------------------------------------------------------------
+Rank  | ID      | Candidate        | Raw Logit  | Scaled    | Prob (%)  | Visual Bar
+----------------------------------------------------------------------------------
+#1    | 262     | ' the'           | -100.2498 | -501.2491 |   88.24% | ██████████████████████████
+#2    | 783     | ' now'           | -100.8175 | -504.0877 |    5.16% | █
+#3    | 257     | ' a'             | -100.8555 | -504.2775 |    4.27% | █
+#4    | 4881    | ' France'        | -101.2102 | -506.0508 |    0.72% | 
+#5    | 6342    | ' Paris'         | -101.2143 | -506.0714 |    0.71% | 
+#6    | 287     | ' in'            | -101.4052 | -507.0260 |    0.27% | 
+#7    | 635     | ' also'          | -101.4141 | -507.0705 |    0.26% | 
+#8    | 407     | ' not'           | -101.5168 | -507.5838 |    0.16% | 
+----------------------------------------------------------------------------------
+Cumulative Probability of Top-8: 99.80% | Remaining 50,249 tokens: 0.20%
+Saved 8 rows to 'gpt2_next_token_results.csv'
+==================================================================================
+
+Enter prompt (or type 'exit' to quit): Enter top-k candidates to display [default = 6]: Enter temperature (e.g., 0.2, 1.0, 2.0) [default = 1.0]: 
+==================================================================================
+PROMPT: "The capital of France is" | TOP-K: 8 | TEMPERATURE: 2.0
+==================================================================================
+
+[STAGE 1] INPUT TOKENIZATION (Text -> Subword IDs)
+----------------------------------------------------------------------------------
+  Pos 0  | ID: 464    | Token: 'The'
+  Pos 1  | ID: 3139   | Token: ' capital'
+  Pos 2  | ID: 286    | Token: ' of'
+  Pos 3  | ID: 4881   | Token: ' France'
+  Pos 4  | ID: 318    | Token: ' is'
+
+[STAGE 2] RAW MODEL SCORES (Logits across all 50,257 vocabulary tokens)
+----------------------------------------------------------------------------------
+  Min Logit : -129.8683   |   Max Logit : -100.2498
+
+[STAGE 3] TOP-8 NEXT-TOKEN CANDIDATES (After Temperature & Softmax)
+----------------------------------------------------------------------------------
+Rank  | ID      | Candidate        | Raw Logit  | Scaled    | Prob (%)  | Visual Bar
+----------------------------------------------------------------------------------
+#1    | 262     | ' the'           | -100.2498 | -50.1249 |    0.47% | 
+#2    | 783     | ' now'           | -100.8175 | -50.4088 |    0.36% | 
+#3    | 257     | ' a'             | -100.8555 | -50.4278 |    0.35% | 
+#4    | 4881    | ' France'        | -101.2102 | -50.6051 |    0.29% | 
+#5    | 6342    | ' Paris'         | -101.2143 | -50.6071 |    0.29% | 
+#6    | 287     | ' in'            | -101.4052 | -50.7026 |    0.27% | 
+#7    | 635     | ' also'          | -101.4141 | -50.7070 |    0.27% | 
+#8    | 407     | ' not'           | -101.5168 | -50.7584 |    0.25% | 
+----------------------------------------------------------------------------------
+Cumulative Probability of Top-8: 2.55% | Remaining 50,249 tokens: 97.45%
+Saved 8 rows to 'gpt2_next_token_results.csv'
+==================================================================================
+
+Enter prompt (or type 'exit' to quit): Enter top-k candidates to display [default = 6]: Enter temperature (e.g., 0.2, 1.0, 2.0) [default = 1.0]: 
+==================================================================================
+PROMPT: "I woke up early and decided to" | TOP-K: 8 | TEMPERATURE: 1.0
+==================================================================================
+
+[STAGE 1] INPUT TOKENIZATION (Text -> Subword IDs)
+----------------------------------------------------------------------------------
+  Pos 0  | ID: 40     | Token: 'I'
+  Pos 1  | ID: 19092  | Token: ' woke'
+  Pos 2  | ID: 510    | Token: ' up'
+  Pos 3  | ID: 1903   | Token: ' early'
+  Pos 4  | ID: 290    | Token: ' and'
+  Pos 5  | ID: 3066   | Token: ' decided'
+  Pos 6  | ID: 284    | Token: ' to'
+
+[STAGE 2] RAW MODEL SCORES (Logits across all 50,257 vocabulary tokens)
+----------------------------------------------------------------------------------
+  Min Logit : -194.2165   |   Max Logit : -147.7158
+
+[STAGE 3] TOP-8 NEXT-TOKEN CANDIDATES (After Temperature & Softmax)
+----------------------------------------------------------------------------------
+Rank  | ID      | Candidate        | Raw Logit  | Scaled    | Prob (%)  | Visual Bar
+----------------------------------------------------------------------------------
+#1    | 467     | ' go'            | -147.7158 | -147.7158 |   18.45% | █████
+#2    | 1011    | ' take'          | -148.5850 | -148.5850 |    7.73% | ██
+#3    | 651     | ' get'           | -149.0029 | -149.0029 |    5.09% | █
+#4    | 466     | ' do'            | -149.3104 | -149.3104 |    3.74% | █
+#5    | 923     | ' start'         | -149.8796 | -149.8796 |    2.12% | 
+#6    | 1949    | ' try'           | -149.9238 | -149.9238 |    2.03% | 
+#7    | 2198    | ' check'         | -149.9334 | -149.9334 |    2.01% | 
+#8    | 711     | ' play'          | -150.0665 | -150.0665 |    1.76% | 
+----------------------------------------------------------------------------------
+Cumulative Probability of Top-8: 42.93% | Remaining 50,249 tokens: 57.07%
+Saved 8 rows to 'gpt2_next_token_results.csv'
+==================================================================================
+
+Enter prompt (or type 'exit' to quit): Enter top-k candidates to display [default = 6]: Enter temperature (e.g., 0.2, 1.0, 2.0) [default = 1.0]: 
+==================================================================================
+PROMPT: "She opened the door and saw" | TOP-K: 8 | TEMPERATURE: 1.0
+==================================================================================
+
+[STAGE 1] INPUT TOKENIZATION (Text -> Subword IDs)
+----------------------------------------------------------------------------------
+  Pos 0  | ID: 3347   | Token: 'She'
+  Pos 1  | ID: 4721   | Token: ' opened'
+  Pos 2  | ID: 262    | Token: ' the'
+  Pos 3  | ID: 3420   | Token: ' door'
+  Pos 4  | ID: 290    | Token: ' and'
+  Pos 5  | ID: 2497   | Token: ' saw'
+
+[STAGE 2] RAW MODEL SCORES (Logits across all 50,257 vocabulary tokens)
+----------------------------------------------------------------------------------
+  Min Logit : -108.6634   |   Max Logit : -77.6512
+
+[STAGE 3] TOP-8 NEXT-TOKEN CANDIDATES (After Temperature & Softmax)
+----------------------------------------------------------------------------------
+Rank  | ID      | Candidate        | Raw Logit  | Scaled    | Prob (%)  | Visual Bar
+----------------------------------------------------------------------------------
+#1    | 257     | ' a'             |  -77.6512 | -77.6512 |   16.61% | ████
+#2    | 262     | ' the'           |  -77.8392 | -77.8392 |   13.76% | ████
+#3    | 326     | ' that'          |  -78.7409 | -78.7409 |    5.59% | █
+#4    | 607     | ' her'           |  -79.1032 | -79.1032 |    3.89% | █
+#5    | 502     | ' me'            |  -79.7225 | -79.7225 |    2.09% | 
+#6    | 734     | ' two'           |  -79.7700 | -79.7700 |    2.00% | 
+#7    | 281     | ' an'            |  -79.8531 | -79.8531 |    1.84% | 
+#8    | 465     | ' his'           |  -79.9908 | -79.9908 |    1.60% | 
+----------------------------------------------------------------------------------
+Cumulative Probability of Top-8: 47.38% | Remaining 50,249 tokens: 52.62%
+Saved 8 rows to 'gpt2_next_token_results.csv'
+==================================================================================
+
+Enter prompt (or type 'exit' to quit): Exiting lab demonstration. Results saved in 'gpt2_next_token_results.csv'.
